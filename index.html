@@ -53,8 +53,7 @@
                 body: datos
             }).then(res => res.json())
             .then(data =>{
-                alert(data);
-                if(data == "error"){
+                if(data === "error"){
                     respuesta.innerHTML = `
                     <div class="alert alert-danger" role="alert">
                         Datos incorrectos
